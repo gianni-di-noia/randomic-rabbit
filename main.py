@@ -8,6 +8,7 @@ import time
 import socketio
 from flask import Flask, render_template
 
+
 APP = Flask(__name__)
 SIO = socketio.Server()
 SIOAPP = socketio.WSGIApp(SIO, APP)
